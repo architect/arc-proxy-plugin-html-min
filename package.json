@@ -1,0 +1,22 @@
+{
+  "name": "@architect/proxy-plugin-html-min",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint index.js --fix",
+    "build": "ncc build index.js --minify -o dist",
+    "test": "tape test.js | tap-spec"
+  },
+  "keywords": [],
+  "author": "Brian LeRoux <b@brian.io>",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@zeit/ncc": "^0.14.0",
+    "eslint": "^5.13.0",
+    "html-minifier": "^3.5.21",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.2"
+  }
+}
